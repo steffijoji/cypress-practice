@@ -12,7 +12,6 @@ export default {
             .should('have.text', 'Search or jump to...')
             .click()
             
-
         cy.get('#query-builder-test')
             .click()
             .type(username)
