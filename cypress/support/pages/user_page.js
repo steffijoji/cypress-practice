@@ -9,5 +9,12 @@ export default {
     accessRepositories() {
         cy.get('main > div.mt-4 * > a:nth-child(2)')
             .click()
+    },
+
+    searchRepo(repoName) {
+        cy.get('#your-repos-filter')
+            .should('be.visible')
+            .click()
+            .type(repoName)
     }
 }

@@ -38,6 +38,6 @@ describe('Search', () => {
     results_page.findUser()
     user_page.accessUserPage()
     user_page.accessRepositories()
+    user_page.searchRepo('cypress-practice')
   })
-
 })
