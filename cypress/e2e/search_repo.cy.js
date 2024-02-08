@@ -39,5 +39,6 @@ describe('Search', () => {
     user_page.accessUserPage()
     user_page.accessRepositories()
     user_page.searchRepo('cypress-practice')
+    user_page.accessRepo('cypress-practice')
   })
 })

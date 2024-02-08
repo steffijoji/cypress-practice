@@ -16,5 +16,14 @@ export default {
             .should('be.visible')
             .click()
             .type(repoName)
+
+        cy.get('.user-repo-search-results-summary')
+            .should('contain.text', repoName)
+    },
+
+    accessRepo(repoName) {
+        cy.contains('a', repoName)
+            .should('be.visible')
+            .click()
     }
 }
