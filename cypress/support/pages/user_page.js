@@ -25,5 +25,10 @@ export default {
         cy.contains('a', repoName)
             .should('be.visible')
             .click()
+    },
+
+    showReadMe() {
+        cy.get('#repo-content-pjax-container * > p:nth-child(6)')
+            .scrollIntoView()
     }
 }

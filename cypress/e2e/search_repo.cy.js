@@ -32,6 +32,16 @@ describe('Search', () => {
     user_page.accessUserPage()
   })
 
+  it('Access repositories', () => {
+    home_page.searchUser('steffijoji{enter}')
+    results_page.accessResultsPage()
+    results_page.findUser()
+    user_page.accessUserPage()
+    user_page.accessRepositories()
+    user_page.searchRepo('cypress-practice')
+    user_page.accessRepo('cypress-practice')
+  })
+
   it.only('Access repositories', () => {
     home_page.searchUser('steffijoji{enter}')
     results_page.accessResultsPage()
@@ -40,5 +50,6 @@ describe('Search', () => {
     user_page.accessRepositories()
     user_page.searchRepo('cypress-practice')
     user_page.accessRepo('cypress-practice')
+    user_page.showReadMe()
   })
 })
