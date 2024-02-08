@@ -12,4 +12,4 @@ Ferramentas utilizadas:
 - Linguagem: JavaScript v20.10.0
 - Editor de código: Visual Studio Code v1.86.0
 
-Essa automação possui algumas asserções para validar que o comando esteja apresentando o resultado esperado e, como exemplo prático, deverá acessar esse mesmo repositório, finalizando por acessar esse mesmo arquivo README.
+Essa automação possui algumas asserções para validar que o comando esteja apresentando o resultado esperado e, como exemplo prático, deverá acessar esse mesmo repositório, finalizando por mostrar o texto desse mesmo arquivo README.
